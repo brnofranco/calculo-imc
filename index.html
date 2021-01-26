@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Device</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <h1 class="logo"> Franco.calc.imc</h1>
+    </header>
+
+    <main class="container">
+        <section id="form">
+            <h2>Preencha os campos abaixo e veja seu resultado</h2>
+
+            <form action="calcularIMC">
+                <input type="text" placeholder="Peso (Kg)" id="peso"/>
+                <input type="text" placeholder="Altura (cm)" id="altura"/>
+                <input type="button" class="btn" value="Calcular" onclick="calcularIMC()"/>
+            </form>
+        </section>
+
+        <section id="result">
+            <div class="card">
+                <h3>Seu IMC</h3>
+                <p class="valor-imc">0</p>
+                <p class="resultado">Abaixo do Peso</p>
+            </div>
+        </section>
+
+        <section id="tabela">
+            <table class="data-table">
+                <tr>
+                    <td>Abaixo do Peso</td>
+                    <td>< 18,5</td>
+                </tr>
+
+                <tr>
+                    <td>Peso Normal</td>
+                    <td>18,5 - 24,9</td>
+                </tr>
+
+                <tr>
+                    <td>Sobrepeso</td>
+                    <td>25 - 29,9</td>
+                </tr>
+
+                <tr>
+                    <td>Obesidade Grau I</td>
+                    <td>30 - 34,9</td>
+                </tr>
+
+                <tr>
+                    <td>Obesidade Grau II</td>
+                    <td>35 - 39,9</td>
+                </tr>
+
+                <tr>
+                    <td>Obesidade Grau III</td>
+                    <td>>= 40</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer><p>Franco.calc</p></footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
